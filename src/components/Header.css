@@ -1,0 +1,120 @@
+.AppName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Header {
+    height: 65px;
+    background-color: #18051f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1%;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px 0 #555;
+}
+
+.SearchBox {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    border-radius: 6px;
+    margin-left: 20px;
+    align-items: center;
+    width: 30%;
+    background-color: white;
+}
+
+.SearchIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.CloseIcon {
+    width: 25px;
+    height: 25px;
+    margin-left: 35%;
+}
+
+.CloseIcon:hover {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.SearchInput {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    margin-right: 3%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(71, 17, 104);
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #18051f;
+    z-index: 1000;
+}

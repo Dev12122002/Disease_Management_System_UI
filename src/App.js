@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import { Toaster } from 'react-hot-toast';
 import AddDisease from "./pages/AddDisease";
 import React from 'react'

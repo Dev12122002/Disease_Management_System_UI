@@ -99,7 +99,7 @@ const DiseaseInfoComponent = (props) => {
 
         var reports = await Axios.get(`/api/Reports/DiseasId=${selectedDisease}`);
 
-        for (var i = 0; i < reports.data.length - 1; i++) {
+        for (let i = 0; i < reports.data.length - 1; i++) {
             response.data.reports = response.data.reports + reports.data[i].reportName + ", ";
         }
         response.data.reports = response.data.reports + reports.data[i].reportName;
@@ -108,7 +108,7 @@ const DiseaseInfoComponent = (props) => {
 
         console.log(medicines.data)
 
-        for (var i = 0; i < medicines.data.length - 1; i++) {
+        for (let i = 0; i < medicines.data.length - 1; i++) {
             response.data.medicines = response.data.medicines + medicines.data[i].medicineName + ", ";
         }
         response.data.medicines = response.data.medicines + medicines.data[i].medicineName;
@@ -177,7 +177,7 @@ const DiseaseInfoComponent = (props) => {
                             Source: <span>{DiseaseInfo?.diseasSource}</span>
                         </DInfo>
                         <DInfo>
-                            Gender: <span>{DiseaseInfo?.gender == "B" ? "Male, Female" : DiseaseInfo?.gender == "M" ? "Male" : "Female"}</span>
+                            Gender: <span>{DiseaseInfo?.gender === "B" ? "Male, Female" : DiseaseInfo?.gender === "M" ? "Male" : "Female"}</span>
                         </DInfo>
                         <DInfo>
                             Infection Rate: <span>{DiseaseInfo?.infectionRate} %</span>
